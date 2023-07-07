@@ -1,0 +1,7 @@
+{
+  "name": "tsf",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

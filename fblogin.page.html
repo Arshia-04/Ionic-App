@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Log in with Facebook</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="content">
+    <p style="font-weight: bold; font-size: 18px;">TSF is requesting access to:</p>
+    <p style="font-size: 15px;">Your name and profile picture.</p>
+    <p style="color: #1877f2;">View access</p>
+  </div>
+  <div id="container">
+    <ion-button color="primary" shape="default" class="custom-button" (click)="Continue()" style="text-transform: none; font-size: medium;">Continue as Arshia</ion-button>
+    <ion-button color="light" shape="default" class="custom-button1" (click)="Continue1()" style="text-transform: none; font-size: medium;">Cancel</ion-button>
+  <p style="color: #9d9d9d ;" class="para">By continuing, TSF will receive ongoing access to the information that you share and Facebook will record when TSF accesses it. <a>Learn more</a> about this sharing and the settings you have.</p>
+   <p style="color: #9d9d9d ;" class="para1">TSF's <a>Privacy Policy</a> and <a>Terms of Service</a></p>
+</div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">fblogin</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

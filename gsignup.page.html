@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sign up with Google</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <div id="content">
+    <p style="font-weight: bold; font-size: 23px; margin-bottom: 5px;">Choose an account</p>
+    <p style="font-size: 20px; margin-top: 10px; ">to continue to <a style="color:#1877F2 ;">TSF</a></p>
+  </div>
+  
+  <ion-button color="shade" class="multiline-button" (click)="gSinUp()"><ion-icon name="person-circle-outline" slot="start" class="icon"></ion-icon>
+    <div id="multiline-text">
+      <p style="margin-bottom: 8px; color: #202124; font-weight: bold; font-size: medium;">ARSHIA SWAIN</p>
+      <p style="margin-top: 1px; color: #696969; font-size: small; text-transform: none;">sarshia.2004@gmail.com</p>
+    </div>
+  </ion-button>
+  
+  <ion-button class="button" color="shade">
+    <ion-icon name="person-add" slot="start" class="icon1"></ion-icon>
+    <div id="text">
+    <p style="text-transform: none; font-size: medium;">Add Another Account</p>
+    </div>
+  </ion-button>
+    <p class="para2">To continue, Google will share your name, email address and profile picture with TSF. Before using this app, review its <a>privacy policy</a> and <a>terms of service</a>.</p>
+  
+    <div class="footer">
+      <span>Help</span>
+      <span>Privacy</span>
+      <span>Terms</span>
+    </div>
+
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">gsignup</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

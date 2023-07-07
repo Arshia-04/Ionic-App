@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Your Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: #1bb4b9;">
+
+  <div class="profile-pic">
+    <img src="assets/1.jpg">
+  </div>
+
+  <div id="profile-info">
+  <div class="name">
+    <p style="font-weight: bold; display: inline-block;">Name : </p>
+    <p style="display: inline-block;"> Arshia Swain</p>
+    </div>
+
+  <div class="email">
+    <p style="font-weight: bold; display: inline-flex;">E-mail : </p>
+    <p style="display: inline-block;"> sarshia.2004@gmail.com</p>
+  </div>
+
+  <div class="username">
+    <p style="font-weight: bold; display: inline-block;">Username : </p>
+    <p style="display: inline-block;"> sarshia.2004</p>
+  </div>
+  </div>
+  <div id="container">
+  <ion-button color="light" class="signout" (click)="SignOut()" shape="round" style="text-transform: none; font-size: medium;">
+    Sign out
+  </ion-button>
+  </div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">main</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Create an account</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+   
+    <ion-item>
+      <ion-input placeholder="E-mail ID" type="email" (keydown.enter)="focusUsername($event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Username" type="text" #usernameInput (keydown.enter)="focusPassword($event)"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input placeholder="Password" type="password" #passwordInput></ion-input>
+    </ion-item>
+
+    <ion-button (click)="signMeup()" shape="round" class="signup-button" style="text-transform: none; font-size: medium;">Sign up</ion-button>
+    
+
+    <p>OR</p>
+
+    <ion-button expand="full" shape="round" class="custom-button" (click)="SignUpwithGoogle()" style="text-transform: none; font-size: medium;"><ion-icon name="logo-google" style="margin-right: 10px; font-size: 20px;"></ion-icon>Sign up with Google</ion-button>
+    <ion-button expand="full" shape="round" class="custom-button1" (click)="SignUpwithFacebook()" style="text-transform: none; font-size: medium;"><ion-icon name="logo-facebook" style="font-size: 22px; margin-right: 10px;"></ion-icon>Sign up with Facebook</ion-button>
+    
+
+  <p> Already have an account? <a routerLink="/login">Log In</a>
+  </p>
+  </div>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">create-account</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
